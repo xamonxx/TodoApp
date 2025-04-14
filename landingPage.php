@@ -14,8 +14,8 @@
   <!-- Tambahkan ini sebelum </body> -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<style type="text/tailwindCss">
-</style>
+<style type="text/tailwindCss"></style>
+
 <body>
   <!-- start navbar -->
   <section class="fixed z-100 navbar glass shadow-md py-2 px-4 lg:px-12">
@@ -87,7 +87,7 @@
             Star on Github
           </a>
           <a href="app/index.php"
-            class="text-white bg-primary py-4 px-6 hover:saturate-60 rounded font-medium z-100">Mulai Atur Harimu</a>
+            class="text-white bg-primary py-4 px-6 hover:saturate-60 rounded font-medium z-50">Mulai Atur Harimu</a>
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 flex justify-center items-center">
@@ -219,9 +219,9 @@
                 class="absolute left-0 top-0 -z-1 mb-8 h-[70px] w-[70px] rotate-[25deg] rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"></span>
               <img class="" width="40px" src="assets/img/ceklist.png" />
             </div>
-            <h4 class="mb-3 text-xl font-bold text-dark">Sematkan Tugas</h4>
+            <h4 class="mb-3 text-xl font-bold text-dark">Ceklist Tugas</h4>
             <p class="mb-8 text-body-color lg:mb-9">
-              Menandai tugas penting agar selalu tampil di bagian atas daftar.
+              Menandai tugas yang telah selesai dikerjakan agar pengguna lebih mudah memantau progres daftar tugas.
             </p>
           </div>
         </div>
@@ -235,9 +235,9 @@
                 class="absolute left-0 top-0 -z-1 mb-8 h-[70px] w-[70px] rotate-[25deg] rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"></span>
               <img class="" width="40px" src="assets/img/pagination.png" />
             </div>
-            <h4 class="mb-3 text-xl font-bold text-dark">Ubah Tugas</h4>
+            <h4 class="mb-3 text-xl font-bold text-dark">Pagination</h4>
             <p class="mb-8 text-body-color lg:mb-9">
-              Mengedit isi tugas yang sudah dibuat sesuai kebutuhan.
+              Membagi daftar tugas menjadi beberapa halaman untuk memudahkan navigasi dan menjaga tampilan tetap rapi
             </p>
           </div>
         </div>
@@ -285,7 +285,8 @@
                 mengatur tugas harian dengan cara yang lebih personal dan
                 menyenangkan.
               </p>
-              <a data-aos="zoom-in-up"
+              <a data-aos="zoom-in-up" 
+                href="app/index.php"
                 class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border rounded-md border-primary bg-primary px-7 hover:border-blue-dark hover:bg-blue-dark">
                 Coba TodoApp
               </a>
@@ -705,10 +706,13 @@
             );
           ">
         <div>
-          <h1 class="text-2xl font-extrabold">Butuh Bantuan atau Punya Masukan?</h1>
+          <h1 class="text-2xl font-extrabold">
+            Butuh Bantuan atau Punya Masukan?
+          </h1>
           <p class="text-sm mt-3">
-            Kami senang mendengar dari kamu!
-Kalau ada pertanyaan, bug yang perlu diperbaiki, atau ide fitur keren buat ToDoApp ini, jangan ragu buat hubungi kami
+            Kami senang mendengar dari kamu! Kalau ada pertanyaan, bug yang
+            perlu diperbaiki, atau ide fitur keren buat ToDoApp ini, jangan
+            ragu buat hubungi kami
           </p>
 
           <div class="mt-12">
@@ -736,7 +740,7 @@ Kalau ada pertanyaan, bug yang perlu diperbaiki, atau ide fitur keren buat ToDoA
           <div class="mb-4">
             <label class="block mb-1" for="name">Nama </label>
             <input
-              class="w-full px-4 py-2 bg-glass rounded-lg focus:outline-none focus:ring-2 focus:focus-ring-primary transition duration-300"
+              class="w-full px-4 py-2 bg-glass rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
               placeholder="Masukan nama " type="text" />
           </div>
           <div class="mb-4">

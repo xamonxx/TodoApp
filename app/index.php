@@ -16,23 +16,7 @@
   <title>Todo App</title>
 </head>
 <style type="text/tailwindCss">
- @layer utilities {
-  .scrollbar-daisy::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
 
-  .scrollbar-daisy::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--b3)); /* Mengikuti warna base DaisyUI */
-    border-radius: 10px;
-  }
-
-  .scrollbar-daisy::-webkit-scrollbar-track {
-    background: hsl(var(--b2)); /* Warna track mengikuti theme DaisyUI */
-    border-radius: 10px;
-  }
-  }
-  
 </style>
 <body class="dots-pattern pb-[700px] scroll-smooth">
   <!-- start navbar -->
@@ -53,7 +37,7 @@
       </div>
       <a class="btn btn-ghost normal-case text-xl ">
         <span class="text-primary">TODO App</span> 📝</a>
-             <a href="../index.html" class="btn btn-primary btn-soft px-5 w-20 font-semibold">Home</a>
+             <a href="../landingPage.php" class="btn btn-primary btn-soft px-5 w-20 font-semibold">Home</a>
     </div>
   </nav>
   <!-- end Navbar -->

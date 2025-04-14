@@ -111,3 +111,21 @@ html{
   transform: rotateX(90deg) translateZ(-40px);
   filter: blur(12px);
 }
+
+@layer utilities {
+  .scrollbar-daisy::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-daisy::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--b3)); /* Mengikuti warna base DaisyUI */
+    border-radius: 10px;
+  }
+
+  .scrollbar-daisy::-webkit-scrollbar-track {
+    background: hsl(var(--b2)); /* Warna track mengikuti theme DaisyUI */
+    border-radius: 10px;
+  }
+  }
+  
